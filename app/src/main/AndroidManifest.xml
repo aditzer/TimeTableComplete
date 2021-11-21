@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.aditi.TimeTableApp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="timetable"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:testOnly="false"
+        android:debuggable="true"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+        android:name="com.example.aditi.TimeTableApp.Monday">
+
+    </activity>
+        <activity android:name="com.example.aditi.TimeTableApp.UpdateActivity"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity"/>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.AddActivity"
+            android:label="Add Book"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity" />
+        <activity
+            android:name="com.example.aditi.TimeTableApp.MainActivity"
+            android:label="Book Library">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
