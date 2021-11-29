@@ -8,6 +8,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_add.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_add_friday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_add_saturday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_add_sunday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_add_thursday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_add_tuesday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_add_wednesday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_friday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_monday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_saturday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_sunday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_thursday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_tuesday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_update.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_update_friday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_update_saturday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_update_sunday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_update_thursday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_update_tuesday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_update_wednesday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/activity_wednesday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/my_row.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/my_row_friday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/my_row_saturday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/my_row_sunday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/my_row_thursday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/my_row_tuesday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/my_row_wednesday.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/layout/reminder_layout.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TimeTable/TimeTable/app/src/main/res/menu/activity_tuesday.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/aditi/Downloads/SQLite_Android-Complete_Tutorial-master/SQLite_Android-Complete_Tutorial-master/app/src/main/res/drawable/ic_delete.xml" value="0.290625" />
         <entry key="..\:/Users/aditi/Downloads/SQLite_Android-Complete_Tutorial-master/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_add.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/aditi/Downloads/SQLite_Android-Complete_Tutorial-master/SQLite_Android-Complete_Tutorial-master/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />

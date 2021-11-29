@@ -8,10 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 import androidx.annotation.Nullable;
 
-class MyDatabaseHelper extends SQLiteOpenHelper {
+class DataBaseFriday extends SQLiteOpenHelper {
 
     private Context context;
-    private static final String DATABASE_NAME = "Monday.db";
+    private static final String DATABASE_NAME = "Friday.db";
     private static final int DATABASE_VERSION = 1;
 
     private static final String MONDAY_TABLE = "monday_table";
@@ -19,7 +19,7 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_SUB = "subject";
     private static final String COLUMN_BOOK = "book";
 
-    MyDatabaseHelper(@Nullable Context context) {
+    DataBaseFriday(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
     }
@@ -27,7 +27,7 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query = "CREATE TABLE " + MONDAY_TABLE +
-                        " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_SUB + " TEXT, " +
                 COLUMN_BOOK + " TEXT)";
         db.execSQL(query);
@@ -80,7 +80,9 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
 
 
     void deleteAllData(Context context){
-        context.deleteDatabase("Monday.db");
+        context.deleteDatabase("Friday.db");
     }
 
 }
+
+

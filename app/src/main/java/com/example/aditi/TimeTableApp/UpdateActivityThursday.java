@@ -9,17 +9,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class UpdateActivity extends AppCompatActivity {
+public class UpdateActivityThursday extends AppCompatActivity {
 
     EditText Monday_Edit_Subject, Monday_Edit_Book;
     Button update_button;
-
     String lec_no, subject, book;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_update);
+        setContentView(R.layout.activity_update_thursday);
 
         Monday_Edit_Subject= findViewById(R.id.Sunday_Edit_Subject);
         Monday_Edit_Book = findViewById(R.id.Sunday_Edit_Book);
@@ -36,7 +35,7 @@ public class UpdateActivity extends AppCompatActivity {
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
+                DataBaseThursday myDB = new DataBaseThursday(UpdateActivityThursday.this);
                 subject = Monday_Edit_Subject.getText().toString().trim();
                 book = Monday_Edit_Book.getText().toString().trim();
                 myDB.updateData(lec_no, subject, book);
@@ -57,11 +56,11 @@ public class UpdateActivity extends AppCompatActivity {
             //Setting Intent Data
             Monday_Edit_Subject.setText(subject);
             Monday_Edit_Book.setText(book);
-        }else{
+        }
+        else{
             Toast.makeText(this, "No data.", Toast.LENGTH_SHORT).show();
         }
     }
-
-
-
 }
+
+

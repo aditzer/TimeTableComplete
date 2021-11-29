@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class AddActivity extends AppCompatActivity {
+public class AddActivityTuesday extends AppCompatActivity {
 
     EditText Monday_Subject_Name, Monday_Book_Name;
     Button Monday_Add;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add);
+        setContentView(R.layout.activity_add_tuesday);
 
         Monday_Subject_Name = findViewById(R.id.Sunday_Subject_Name);
         Monday_Book_Name = findViewById(R.id.Sunday_Book_Name);
@@ -22,7 +22,7 @@ public class AddActivity extends AppCompatActivity {
         Monday_Add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(AddActivity.this);
+                DataBaseTuesday myDB = new DataBaseTuesday(AddActivityTuesday.this);
                 myDB.addBook(Monday_Subject_Name.getText().toString().trim(),
                         Monday_Book_Name.getText().toString().trim());
 

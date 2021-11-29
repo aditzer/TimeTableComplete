@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Monday">
+    tools:context=".Thursday">
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -41,7 +41,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="82dp"
-        android:text="@string/monday_timetable"
+        android:text="ThursdayTimetable"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +56,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="163dp"
         android:backgroundTint="#EC8C8C"
-        android:onClick="onClickMondayReminder"
-        android:text="@string/set_monday_reminder"
+        android:onClick="onClickThursdayReminder"
+        android:text="SET THURSDAY REMINDER"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Sunday_textview" />

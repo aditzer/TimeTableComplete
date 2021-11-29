@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SqliteTutorial</string>
     <string name="monday_timetable">Monday Timetable</string>
+    <string name="set_monday_reminder">Set Monday Reminder</string>
 </resources>

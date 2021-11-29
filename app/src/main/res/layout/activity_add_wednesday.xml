@@ -4,43 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateActivity"
+    tools:context=".AddActivityWednesday"
     android:padding="30dp">
 
     <EditText
-        android:id="@+id/Sunday_Edit_Subject"
+        android:id="@+id/Sunday_Subject_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:ems="10"
-        android:hint="Edit Subject Name"
+        android:hint="Enter Subject Name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Sunday_Edit_Book"
+        android:id="@+id/Sunday_Book_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Edit Book Name"
+        android:hint="Enter Book name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Sunday_Edit_Subject" />
+        app:layout_constraintTop_toBottomOf="@+id/Sunday_Subject_Name" />
 
     <Button
-        android:id="@+id/update_button_Sunday"
-        android:layout_width="150dp"
+        android:id="@+id/Sunday_Add"
+        android:layout_width="150sp"
         android:layout_height="70dp"
         android:layout_marginTop="131dp"
-        android:text="Done"
+        android:text="Add"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Sunday_Edit_Book" />
-
+        app:layout_constraintTop_toBottomOf="@+id/Sunday_Book_Name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

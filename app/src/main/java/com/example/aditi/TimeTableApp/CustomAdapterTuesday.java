@@ -18,13 +18,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class CustomAdapterTuesday extends RecyclerView.Adapter<CustomAdapterTuesday.MyViewHolderTuesday> {
 
     private Context context;
     private Activity activity;
     private ArrayList Lec_id, sub, books;
 
-    CustomAdapter(Activity activity, Context context, ArrayList Lec_id, ArrayList sub, ArrayList books){
+    CustomAdapterTuesday(Activity activity, Context context, ArrayList Lec_id, ArrayList sub, ArrayList books){
         this.activity = activity;
         this.context = context;
         this.Lec_id = Lec_id;
@@ -34,22 +34,23 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CustomAdapterTuesday.MyViewHolderTuesday onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.my_row, parent, false);
-        return new MyViewHolder(view);
+        return new MyViewHolderTuesday(view);
     }
+
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
-    public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolderTuesday holder, final int position) {
         holder.Lec_id_txt.setText(String.valueOf(Lec_id.get(position)));
         holder.sub_txt.setText(String.valueOf(sub.get(position)));
         holder.books_txt.setText(String.valueOf(books.get(position)));
         holder.mainLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, UpdateActivity.class);
+                Intent intent = new Intent(context, UpdateActivityTuesday.class);
                 intent.putExtra("id", String.valueOf(Lec_id.get(position)));
                 intent.putExtra("title", String.valueOf(sub.get(position)));
                 intent.putExtra("author", String.valueOf(books.get(position)));
@@ -65,12 +66,12 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         return Lec_id.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
+    class MyViewHolderTuesday extends RecyclerView.ViewHolder {
 
         TextView Lec_id_txt, sub_txt, books_txt;
         LinearLayout mainLayout;
 
-        MyViewHolder(@NonNull View itemView) {
+        MyViewHolderTuesday(@NonNull View itemView) {
             super(itemView);
             Lec_id_txt = itemView.findViewById(R.id.sun_lec_no);
             sub_txt = itemView.findViewById(R.id.sun_sub_name);
@@ -83,3 +84,4 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     }
 
 }
+

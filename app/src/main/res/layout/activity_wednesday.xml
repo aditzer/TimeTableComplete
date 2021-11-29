@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Monday">
+    tools:context=".Wednesday">
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/Sunday_Add"
+        android:id="@+id/Wednesday_Add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="320dp"
@@ -16,13 +16,13 @@
         android:layout_marginTop="400dp"
         android:clickable="true"
         android:focusable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewSunday"
-        app:layout_constraintStart_toStartOf="@+id/recyclerViewSunday"
-        app:layout_constraintTop_toTopOf="@+id/recyclerViewSunday"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewWednesday"
+        app:layout_constraintStart_toStartOf="@+id/recyclerViewWednesday"
+        app:layout_constraintTop_toTopOf="@+id/recyclerViewWednesday"
         app:srcCompat="@drawable/ic_add" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewSunday"
+        android:id="@+id/recyclerViewWednesday"
         android:layout_width="414dp"
         android:layout_height="534dp"
         android:layout_marginTop="50dp"
@@ -41,7 +41,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="82dp"
-        android:text="@string/monday_timetable"
+        android:text="Wednesday Timetable"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +56,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="163dp"
         android:backgroundTint="#EC8C8C"
-        android:onClick="onClickMondayReminder"
-        android:text="@string/set_monday_reminder"
+        android:onClick="onClickWednesdayReminder"
+        android:text="SET WEDNESDAY REMINDER"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Sunday_textview" />

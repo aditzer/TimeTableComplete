@@ -8,7 +8,7 @@
     android:padding="30dp">
 
     <EditText
-        android:id="@+id/Monday_Subject_Name"
+        android:id="@+id/Sunday_Subject_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Monday_Book_Name"
+        android:id="@+id/Sunday_Book_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -29,10 +29,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Monday_Subject_Name" />
+        app:layout_constraintTop_toBottomOf="@+id/Sunday_Subject_Name" />
 
     <Button
-        android:id="@+id/Monday_Add"
+        android:id="@+id/Sunday_Add"
         android:layout_width="150sp"
         android:layout_height="70dp"
         android:layout_marginTop="131dp"
@@ -41,5 +41,5 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Monday_Book_Name" />
+        app:layout_constraintTop_toBottomOf="@+id/Sunday_Book_Name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

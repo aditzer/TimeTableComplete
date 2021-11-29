@@ -1,6 +1,5 @@
 package com.example.aditi.TimeTableApp;
 
-
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
@@ -26,40 +25,40 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class Monday extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
+public class Thursday extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
 
     RecyclerView recyclerView;
     FloatingActionButton add_button;
-    MyDatabaseHelper myDB;
+    DataBaseThursday myDB;
     ArrayList<String> Lec_id, sub, books;
-    CustomAdapter customAdapter;
+    CustomAdapterThursday customAdapter;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_monday);
+        setContentView(R.layout.activity_thursday);
 
         recyclerView = findViewById(R.id.recyclerViewSunday);
         add_button = findViewById(R.id.Sunday_Add);
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Monday.this, AddActivity.class);
+                Intent intent = new Intent(Thursday.this, AddActivityThursday.class);
                 startActivity(intent);
             }
         });
 
-        myDB = new MyDatabaseHelper(Monday.this);
+        myDB = new DataBaseThursday(Thursday.this);
         Lec_id = new ArrayList<>();
         sub = new ArrayList<>();
         books = new ArrayList<>();
 
         storeDataInArrays();
 
-        customAdapter = new CustomAdapter(Monday.this,this, Lec_id, sub, books);
+        customAdapter = new CustomAdapterThursday(Thursday.this,this, Lec_id, sub, books);
         recyclerView.setAdapter(customAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(Monday.this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(Thursday.this));
 
     }
 
@@ -107,10 +106,10 @@ public class Monday extends AppCompatActivity implements TimePickerDialog.OnTime
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                MyDatabaseHelper myDB = new MyDatabaseHelper(Monday.this);
-                myDB.deleteAllData(Monday.this);
+                DataBaseThursday myDB = new DataBaseThursday(Thursday.this);
+                myDB.deleteAllData(Thursday.this);
                 //Refresh Activity
-                Intent intent = new Intent(Monday.this, MainActivity.class);
+                Intent intent = new Intent(Thursday.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -123,24 +122,26 @@ public class Monday extends AppCompatActivity implements TimePickerDialog.OnTime
         });
         builder.create().show();
     }
-    public void onClickMondayReminder(View v){
+    public void onClickThursdayReminder(View v){
         DialogFragment timePickerDialog =new TimePickerFragment();
-        timePickerDialog.show(getSupportFragmentManager(),"time picker");
+        timePickerDialog.show(getSupportFragmentManager(),"time picker4");
     }
 
     @Override
     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.DAY_OF_WEEK,Calendar.SUNDAY);
+        calendar.set(Calendar.DAY_OF_WEEK,Calendar.WEDNESDAY);
         calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
         calendar.set(Calendar.MINUTE, minute);
         calendar.set(Calendar.SECOND, 0);
         calendar.set(Calendar.MILLISECOND, 0);
-        Intent intent = new Intent(getApplicationContext(), MondayReminder.class);
+        Intent intent = new Intent(getApplicationContext(), ThursdayReminder.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 100, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),7*24*60*60*1000, pendingIntent);
     }
 }
+
+
 
 

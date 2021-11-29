@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.aditi.TimeTableApp">
-
+    package="com.example.aditi.TimeTableApp"
+    tools:ignore="MissingLeanbackLauncher">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,18 +23,101 @@
         android:debuggable="true"
         tools:ignore="HardcodedDebugMode">
         <activity
-        android:name="com.example.aditi.TimeTableApp.Monday">
+        android:name="com.example.aditi.TimeTableApp.Monday"
+            android:label="Monday">
+        </activity>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.Tuesday"
+            android:label="Tuesday">
+        </activity>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.Wednesday"
+            android:label="Wednesday">
+        </activity>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.Thursday"
+            android:label="Thursday">
+        </activity>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.Friday"
+            android:label="Friday">
+        </activity>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.Saturday"
+            android:label="Saturday">
+        </activity>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.Sunday"
+            android:label="Sunday">
+        </activity>
 
-    </activity>
-        <activity android:name="com.example.aditi.TimeTableApp.UpdateActivity"
+        <activity
+            android:name="com.example.aditi.TimeTableApp.UpdateActivity"
+            android:label="Monday: Update Lecture"
             android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity"/>
         <activity
             android:name="com.example.aditi.TimeTableApp.AddActivity"
-            android:label="Add Book"
+            android:label="Monday: Add New Lecture"
             android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity" />
+
+        <activity
+            android:name="com.example.aditi.TimeTableApp.UpdateActivityTuesday"
+            android:label="Tuesday: Update Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity"/>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.AddActivityTuesday"
+            android:label="Tuesday: Add New Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity" />
+
+        <activity
+            android:name="com.example.aditi.TimeTableApp.UpdateActivityWednesday"
+            android:label="Wednesday: Update Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity"/>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.AddActivityWednesday"
+            android:label="Wednesday: Add New Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity" />
+
+        <activity
+            android:name="com.example.aditi.TimeTableApp.UpdateActivityThursday"
+            android:label="Thursday: Update Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity"/>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.AddActivityThursday"
+            android:label="Thursday: Add New Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity" />
+
+        <activity
+            android:name="com.example.aditi.TimeTableApp.UpdateActivityFriday"
+            android:label="Friday: Update Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity"/>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.AddActivityFriday"
+            android:label="Friday: Add New Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity" />
+
+        <activity
+            android:name="com.example.aditi.TimeTableApp.UpdateActivitySaturday"
+            android:label="Saturday: Update Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity"/>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.AddActivitySaturday"
+            android:label="Saturday: Add New Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity" />
+
+        <activity
+            android:name="com.example.aditi.TimeTableApp.UpdateActivitySunday"
+            android:label="Sunday: Update Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity"/>
+        <activity
+            android:name="com.example.aditi.TimeTableApp.AddActivitySunday"
+            android:label="Sunday: Add New Lecture"
+            android:parentActivityName="com.example.aditi.TimeTableApp.MainActivity" />
+
         <activity
             android:name="com.example.aditi.TimeTableApp.MainActivity"
-            android:label="Book Library">
+            android:label="Timetable"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -33,6 +125,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".MondayReminder"/>
+        <receiver android:name=".TuesdayReminder"/>
+        <receiver android:name=".WednesdayReminder"/>
+        <receiver android:name=".ThursdayReminder"/>
+        <receiver android:name=".FridayReminder"/>
+        <receiver android:name=".SaturdayReminder"/>
+        <receiver android:name=".SundayReminder"/>
     </application>
 
 </manifest>
